@@ -1,4 +1,4 @@
-![Mô tả ảnh](image1.png)
+![Mô tả ảnh](image/image1.png)
 
 Mo file brokenrequest 
 hân tích (Reconnaissance)
@@ -6,16 +6,16 @@ Khi chạy file binary, chương trình hiển thị một menu với 8 hành đ
 
 Sử dụng Ghidra/IDA để decompile file thực thi, tôi tìm thấy hàm `main` và phát hiện ra **Trạng thái đích (Target State)** đã bị lộ ngay trong code khởi tạo:
 
-`c`
-  `local_38 = 2;`
-  `local_34 = 6;`
-  `local_30 = 0xfffffffc; // -4`
-  `local_2c = 6;`
-  `local_28 = 0;`
-  `local_24 = 4;`
-  `local_20 = 0xfffffffd; // -3`
-  `local_1c = 1;`
-  
+```c
+  local_38 = 2;
+  local_34 = 6;
+  local_30 = 0xfffffffc; // -4
+  local_2c = 6;
+  local_28 = 0;
+  local_24 = 4;
+  local_20 = 0xfffffffd; // -3
+  local_1c = 1;
+```
 1.Mở file bằng GDB: `gdb ./brokenquest`
 
 2.Đặt breakpoint tại hàm kiểm tra: `b turn_in`
