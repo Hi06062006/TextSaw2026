@@ -1,4 +1,4 @@
-![Mô tả ảnh](image2.png)
+![Mô tả ảnh](image/image2.png)
 
 
 Mo file switcheroo
